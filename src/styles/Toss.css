@@ -1,0 +1,134 @@
+.toss {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #f4f4f4; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/toss_port.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.toss #container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.toss #header {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 250px;
+}
+
+.toss #header h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.toss #heads-tails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 5px; */
+}
+
+.toss #head,
+.toss #tail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 800;
+    /* margin-bottom: 20px; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.641);
+    margin-bottom: 50px;
+}
+
+.toss #flip {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.toss button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.toss button:hover {
+    background-color: #0056b3;
+}
+
+.toss #toss-won,
+.toss #toss-lost {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.toss #toss-won {
+    background-color: #d4eddaba;
+    color: #155724;
+}
+
+.toss #toss-lost {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+
+
+@media(min-width:900px) {
+    .toss {
+
+        /* background-color: #f4f4f4; */
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("../assets/toss_landscape.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .toss #container {
+        justify-content: center;
+    }
+
+    .toss #header {
+        margin-bottom: 100px;
+    }
+
+    .toss #head,
+    .toss #tail {
+        background-color: rgba(255, 255, 255, 0);
+        font-size: x-large;
+    }
+}
